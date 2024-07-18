@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Calculate Table</h1>
+<form action="Table/Calc" method="post">
+    <input type="text" name="txtnum" placeholder="Enter number"  />
+    <br />
+    <input type="submit" value="Calculate" />
+ </form>
+
+@{
+    if (ViewBag.result != null)
+    {
+        List<Int32> l = ViewBag.result;
+        foreach (var item in l)
+        {
+            <p>@item</p>
+        }
+    }
+}
+
