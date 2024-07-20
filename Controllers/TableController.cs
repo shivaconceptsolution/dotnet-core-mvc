@@ -17,7 +17,8 @@ namespace WelcomeProject.Controllers
             List<Int32> lst = new List<Int32>();
             for(int i=1;i<=10;i++)
             {
-                lst.Add(num * i);
+                int r = num * i;
+                lst.Add(r);
             }
             ViewBag.result = lst;
             return View("Index");

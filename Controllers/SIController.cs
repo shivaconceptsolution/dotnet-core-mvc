@@ -14,7 +14,8 @@ namespace WelcomeProject.Controllers
             float r = Convert.ToSingle(obj["txtr"]);
             float t = Convert.ToSingle(obj["txtt"]);
             float s = (p * r * t) / 100;
-            ViewBag.result = s;
+            ViewBag.result = "Result is "+s;
+
             return View();
         }
     }

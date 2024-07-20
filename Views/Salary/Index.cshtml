@@ -1,0 +1,54 @@
+﻿@model WelcomeProject.Models.SalaryCalc
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h4>SalaryCalc</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Basic" class="control-label"></label>
+                <input asp-for="Basic" class="form-control" />
+                <span asp-validation-for="Basic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ta" class="control-label"></label>
+                <input asp-for="Ta" class="form-control" />
+                <span asp-validation-for="Ta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Da" class="control-label"></label>
+                <input asp-for="Da" class="form-control" />
+                <span asp-validation-for="Da" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comm" class="control-label"></label>
+                <input asp-for="Comm" class="form-control" />
+                <span asp-validation-for="Comm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pf" class="control-label"></label>
+                <input asp-for="Pf" class="form-control" />
+                <span asp-validation-for="Pf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nol" class="control-label"></label>
+                <input asp-for="Nol" class="form-control" />
+                <span asp-validation-for="Nol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        @ViewBag.result
+    </div>
+</div>
+
+
+

@@ -1,0 +1,34 @@
+﻿@model WelcomeProject.Models.Swap
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h4>Swap</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="A" class="control-label">Enter First Number</label>
+                <input asp-for="A" class="form-control" />
+                <span asp-validation-for="A" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="B" class="control-label">Enter Second Number</label>
+                <input asp-for="B" class="form-control" />
+                <span asp-validation-for="B" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-primary" />
+            </div>
+        </form>
+        @ViewBag.result
+    </div>
+</div>
+
+
+
