@@ -1,0 +1,16 @@
+﻿@model WelcomeProject.Models.AddModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@using(Html.BeginForm())
+{
+<p> @Html.TextBoxFor(a=>a.Num1)</p>
+<p> @Html.TextBoxFor(a=>a.Num2) </p>
+<p><input type="submit" name="btnsubmit" value="+" /></p>
+<p><input type="submit" name="btnsubmit" value="-" /></p>
+<p><input type="submit" name="btnsubmit" value="*" /></p>
+<p><input type="submit" value="/" name="btnsubmit" /></p>
+}
+ @ViewBag.result
