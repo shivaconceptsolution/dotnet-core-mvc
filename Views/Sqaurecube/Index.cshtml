@@ -1,0 +1,22 @@
+﻿@model WelcomeProject.Models.SquarecbModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Square and Cube Calculation Program</h1>
+@using(Html.BeginForm())
+{
+    <div>
+        @Html.RadioButtonFor(a=>a.Ope,"Square") @Html.Label("Square")
+        @Html.RadioButtonFor(a=>a.Ope,"Cube")  @Html.Label("Cube")
+       
+    </div>
+    <div>
+        @Html.TextBoxFor(a=>a.Num)
+    </div>
+    <div>
+        <input type="submit" name="btnsubmit" value="click" />
+    </div>
+}
+@ViewBag.result
+

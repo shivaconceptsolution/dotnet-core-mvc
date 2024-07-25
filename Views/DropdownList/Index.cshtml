@@ -1,0 +1,17 @@
+﻿@model WelcomeProject.Models.Products
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@using(Html.BeginForm())
+{
+    <div>
+        @Html.DropDownList("selectedItemId", (SelectList)ViewBag.Items, "Please select an item")
+    </div>
+    <div>
+        <input type="submit" name="btnsubmit" value="Click" />
+    </div>
+}
+@ViewBag.result
+
