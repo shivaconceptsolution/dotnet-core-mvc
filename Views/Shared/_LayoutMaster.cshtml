@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="logodiv">
+            <h1>DUMMY WEBSITE</h1>
+        </div>
+        <div class="menudiv">
+            <ul>
+                <li><a href="/front/index">Home</a></li>
+                <li><a href="/front/Aboutus">About us</a></li>
+                <li><a href="/front/Services">Services</a></li>
+                <li><a href="/front/Gallery">Gallery</a></li>
+                <li><a href="/front/Contactus">Contactus</a></li>
+            </ul>
+        </div>
+       
+    </header>
+    <div id="middle">
+
+        @RenderBody()
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

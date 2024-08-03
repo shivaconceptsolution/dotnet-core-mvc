@@ -1,0 +1,35 @@
+﻿* {
+    margin:0px;
+
+}
+header{
+ height:100px;
+ background-color:orange;
+}
+header ul li{
+    display:inline-block;
+    margin-left:10px;
+  
+}
+    header ul li a {
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+.logodiv
+{
+    float:left;
+}
+.menudiv
+{
+    float:right;
+}
+#middle {
+
+    height: 400px;
+    background-color:gray;
+}
+footer {
+    height: 200px;
+    background-color: orange;
+}
